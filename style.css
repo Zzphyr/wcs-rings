@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css?family=Eagle+Lake&display=swap");
+body {
+  font-family: 'Eagle Lake', cursive;
+}
+
+nav {
+  position: absolute;
+  left: 55%;
+}
+
+header {
+  background-color: #FD5F01;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header h1 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-size: 23px;
+  padding-left: 1em;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+}
+
+header ul li {
+  padding: 9px;
+  list-style: none;
+}
+
+header ul li:hover {
+  text-decoration: underline;
+}
+
+header ul li::after {
+  content: " | ";
+}
+
+header ul li:last-child::after {
+  content: "";
+}
+
+p {
+  margin: 15px 10px;
+}
+
+main {
+  text-align: center;
+  font-size: 41px;
+  padding: 1em;
+}
+
+main .text1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .text1 .precious {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 5px solid #FD5F01;
+  border-radius: 50%;
+}
+
+main .text2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .text2 .oneRing {
+  width: 200px;
+  height: 200px;
+  background-color: transparent;
+  border: 15px solid #FCCA01;
+  border-radius: 50%;
+  -webkit-box-shadow: 5px 5px 10px 5px #e3bb1a;
+          box-shadow: 5px 5px 10px 5px #e3bb1a;
+}
+
+main .text3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .text3 .find:nth-child(1) {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 4px solid #202020;
+  border-radius: 50%;
+  margin-left: -20px;
+  -webkit-box-shadow: 2px 2px 2px #2e2e2e;
+          box-shadow: 2px 2px 2px #2e2e2e;
+}
+
+main .text3 .find:nth-child(2) {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: 5px solid #202020;
+  border-radius: 50%;
+  margin-left: -20px;
+  -webkit-box-shadow: 2px 2px 2px #2e2e2e;
+          box-shadow: 2px 2px 2px #2e2e2e;
+}
+
+main .text3 .find:nth-child(3) {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 6px solid #202020;
+  border-radius: 50%;
+  margin-left: -20px;
+  -webkit-box-shadow: 2px 2px 2px #2e2e2e;
+          box-shadow: 2px 2px 2px #2e2e2e;
+}
+
+main .text3 .find:nth-child(4) {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 7px solid #202020;
+  border-radius: 50%;
+  margin-left: -20px;
+  -webkit-box-shadow: 2px 2px 2px #2e2e2e;
+          box-shadow: 2px 2px 2px #2e2e2e;
+}
+
+main .text3 .find:nth-child(5) {
+  width: 70px;
+  height: 70px;
+  background-color: transparent;
+  border: 8px solid #202020;
+  border-radius: 50%;
+  margin-left: -20px;
+  -webkit-box-shadow: 2px 2px 2px #2e2e2e;
+          box-shadow: 2px 2px 2px #2e2e2e;
+}
+
+main .text3 .find:nth-child(6) {
+  width: 80px;
+  height: 80px;
+  background-color: transparent;
+  border: 9px solid #202020;
+  border-radius: 50%;
+  margin-left: -20px;
+  -webkit-box-shadow: 2px 2px 2px #2e2e2e;
+          box-shadow: 2px 2px 2px #2e2e2e;
+}
+
+footer {
+  background-color: #FD5F01;
+  color: white;
+  padding: 2px;
+}
+
+footer ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-flow: column;
+}
+
+footer ul li {
+  list-style: none;
+}
+/*# sourceMappingURL=style.css.map */

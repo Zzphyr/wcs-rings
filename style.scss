@@ -1,0 +1,116 @@
+@import "ring";
+@import "variable";
+
+@import url('https://fonts.googleapis.com/css?family=Eagle+Lake&display=swap');
+
+@mixin maintext {
+    text-align: center;
+    font-size: 41px;
+    padding: 1em;
+}
+
+@mixin flex-center {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;  
+    align-items: center;
+}
+
+body {
+    font-family: 'Eagle Lake', cursive;
+}
+
+nav {
+    position: absolute;
+    left: 55%;
+}
+
+header {
+    background-color: $orange;
+    color: $link-color;
+    display: flex;
+        h1 { 
+            align-self: flex-start;
+            font-size: 23px;
+            padding-left: 1em;
+        }
+
+        ul {
+            display: flex; 
+            justify-content: flex-end;
+            align-items: center;
+            font-size: 15px;
+            li {
+                padding: 9px;
+                list-style: none;
+                &:hover {
+                text-decoration: underline;
+                }
+                &::after {
+                content: " | ";
+                }
+                &:last-child::after {
+                    content: "";
+                }
+            }
+        }
+}
+
+p {
+    margin: 15px 10px;
+}
+
+main {
+    @include maintext();
+    .text1 {
+        @include flex-center();
+        .precious {
+            @include ring(40px, $orange, 5px);
+        }
+    }
+    .text2 {
+        @include flex-center();
+        .oneRing {
+            @include ring(200px, $yellow, 15px);
+            box-shadow: 5px 5px 10px 5px desaturate( $yellow, 20% );
+        }
+    }
+    .text3 {
+        @include flex-center();
+        .find {
+            @for $i from 1 to 7 {
+                &:nth-child(#{$i}) {
+                    @include ring(20px+10*$i, rgb(32, 32, 32), 3px+$i);
+                    margin-left: -20px;
+                    box-shadow: 2px 2px 2px rgb(46, 46, 46);
+                }
+            }
+            
+        }
+    }   
+}
+
+
+
+
+
+
+footer {
+    background-color: $orange;
+    color: $link-color;
+    padding: 2px;
+    ul {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-flow: column;
+        li {
+            list-style: none;
+        }
+    }
+}
+
+
+
+
+
+

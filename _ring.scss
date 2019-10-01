@@ -1,0 +1,7 @@
+@mixin ring ($side, $color, $border) {
+    width: $side;
+    height: $side;
+    background-color: transparent ;
+    border: $border solid $color;
+    border-radius: 50%;
+}
